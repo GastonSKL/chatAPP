@@ -1586,6 +1586,10 @@ div.rta__autocomplete.str-chat__emojisearch {
   padding: 0px;
 }
 
+.str-chat{
+  height: auto !important;
+}
+
 .str-chat .str-chat__list--thread .str-chat__reverse-infinite-scroll {
   padding-top: 0px;
 }
