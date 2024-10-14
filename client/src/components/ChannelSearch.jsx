@@ -51,7 +51,7 @@ const ChannelSearch = ({ setToggleContainer }) => {
     getChannels(event.target.value);
   };
 
-  const setChannels = (channel) => {
+  const setChannel = (channel) => {
     setQuery("");
     setActiveChannel(channel);
   };
@@ -75,7 +75,7 @@ const ChannelSearch = ({ setToggleContainer }) => {
           teamChannels={teamChannels}
           directChannels={directChannels}
           loading={loading}
-          setChannels={setChannels}
+          setChannel={setChannel}
           setQuery={setQuery}
           setToggleContainer={setToggleContainer}
         />
