@@ -39,10 +39,10 @@ app.post("/", (req, res) => {
         }
       });
 
-      return res.status(200).send("Message sent!");
+    return res.status(200).send("Message sent!");
   }
 
-  return res.status(200).send("Not a new message request")
+  return res.status(200).send("Not a new message request");
 });
 
 app.use("/auth", authRoutes);
