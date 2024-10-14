@@ -42,7 +42,7 @@ const TeamChannelList = ({
           setIsCreating={setIsCreating}
           setIsEditing={setIsEditing}
           setCreateType={setCreateType}
-          type={type === "team" ? "team" : "messagin"}
+          type={type === "team" ? "team" : "messaging"}
         />
       </div>
       {children}
