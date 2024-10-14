@@ -41,7 +41,7 @@ const ChanelListContent = ({
   setIsCreating,
   setCreateType,
   setIsEditing,
-  setToggleCntainer,
+  setToggleContainer,
 }) => {
   const logout = () => {
     cookies.remove("token");
@@ -64,7 +64,7 @@ const ChanelListContent = ({
       <SideBar logout={logout} />
       <div className="channel-list__list__wrapper">
         <CompanyHeader />
-        <ChannelSearch />
+        <ChannelSearch setToggleContainer={setToggleContainer}/>
         <ChannelList
           filters={filters}
           channelRenderFilterFn={customChannelTeamFilter}
@@ -76,14 +76,14 @@ const ChanelListContent = ({
               setIsCreating={setIsCreating}
               setCreateType={setCreateType}
               setIsEditing={setIsEditing}
-              setToggleCntainer={setToggleCntainer}
+              setToggleContainer={setToggleContainer}
             />
           )}
           Preview={(previewProps) => (
             <TeamChannelPreview
               {...previewProps}
               type="team"
-              setToggleCntainer={setToggleCntainer}
+              setToggleContainer={setToggleContainer}
               setIsCreating={setIsCreating}
               setIsEditing={setIsEditing}
             />
@@ -100,14 +100,14 @@ const ChanelListContent = ({
               setIsCreating={setIsCreating}
               setIsEditing={setIsEditing}
               setCreateType={setCreateType}
-              setToggleCntainer={setToggleCntainer}
+              setToggleContainer={setToggleContainer}
             />
           )}
           Preview={(previewProps) => (
             <TeamChannelPreview
               {...previewProps}
               type="messagin"
-              setToggleCntainer={setToggleCntainer}
+              setToggleContainer={setToggleContainer}
               setIsCreating={setIsCreating}
               setIsEditing={setIsEditing}
             />
@@ -123,7 +123,7 @@ const ChanelListContainer = ({
   setIsCreating,
   setIsEditing,
 }) => {
-  const [toggleCntainer, setToggleCntainer] = useState(false);
+  const [toggleCntainer, setToggleContainer] = useState(false);
 
   return (
     <>
@@ -144,14 +144,14 @@ const ChanelListContainer = ({
         <div
           className="channel-list__container-toggle"
           onClick={() =>
-            setToggleCntainer((prevToggleContainer) => !prevToggleContainer)
+            setToggleContainer((prevToggleContainer) => !prevToggleContainer)
           }
         ></div>
         <ChanelListContent
           setIsCreating={setIsCreating}
           setCreateType={setCreateType}
           setIsEditing={setIsEditing}
-          setToggleCntainer={setToggleCntainer}
+          setToggleContainer={setToggleContainer}
         />
       </div>
     </>

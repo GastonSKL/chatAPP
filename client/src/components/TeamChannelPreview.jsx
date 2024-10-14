@@ -5,7 +5,7 @@ const TeamChannelPreview = ({
   setActiveChannel,
   channel,
   type,
-  setToggleCntainer,
+  setToggleContainer,
   setIsCreating,
   setIsEditing,
 }) => {
@@ -47,8 +47,8 @@ const TeamChannelPreview = ({
         setIsCreating(false);
         setIsEditing(false);
         setActiveChannel(channel);
-        if (setToggleCntainer) {
-          setToggleCntainer((prevToggleCntainer) => !prevToggleCntainer);
+        if (setToggleContainer) {
+          setToggleContainer((prevToggleCntainer) => !prevToggleCntainer);
         }
       }}
     >

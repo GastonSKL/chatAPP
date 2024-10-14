@@ -713,6 +713,7 @@ body {
   cursor: pointer;
 }
 
+
 .user-item__name-wrapper {
   display: flex;
   align-items: center;
@@ -1588,6 +1589,10 @@ div.rta__autocomplete.str-chat__emojisearch {
 
 .str-chat{
   height: auto !important;
+}
+
+.str-chat__main-panel{
+  height: 100vh !important;
 }
 
 .str-chat .str-chat__list--thread .str-chat__reverse-infinite-scroll {
