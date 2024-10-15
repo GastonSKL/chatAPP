@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --primary-color: #005fff;
   --primary-color-alpha: #005fff1a;
+  --primario: #8b4513;
+  --primario-alfa: #a0522d;
+  --primario-beta: #b87333;
+  --secudnario: #deb887;
+  --terciario: #f0e68c;
 }
 
 html,
@@ -272,7 +279,7 @@ body {
 }
 
 .channel-empty__first {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 120%;
@@ -285,7 +292,7 @@ body {
 }
 
 .channel-empty__second {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 120%;
   margin: 0;
@@ -336,7 +343,7 @@ body {
 }
 
 .custom-thread-header__left-title {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -345,7 +352,7 @@ body {
 }
 
 .custom-thread-header__left-count {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #858688;
 }
@@ -372,36 +379,36 @@ body {
 
 .channel-list__sidebar {
   width: 72px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    var(--primary-color);
-  box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
-  /* border-top-left-radius: 16px; */
-  /* border-bottom-left-radius: 16px; */
+  box-shadow: 1px 0px 0px var(--primario);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
 }
 
 .channel-list__sidebar__icon1 {
   width: 44px;
   height: 44px;
   margin: 14px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       150.64deg,
       rgba(0, 0, 0, 0.1) 12.73%,
       rgba(0, 0, 0, 0) 89.32%
     ),
     #ffffff;
   border-radius: 9999px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33); */
 }
 
 .channel-list__list__wrapper {
   display: flex;
   flex-direction: column;
-  background: var(--primary-color);
+  /* background: #DEB887; */
   width: 240px;
 }
 
 .icon1__inner {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   height: 100%;
   display: flex;
   align-items: center;
@@ -412,19 +419,19 @@ body {
   width: 44px;
   height: 44px;
   margin: 14px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       150.64deg,
       rgba(0, 0, 0, 0.1) 12.73%,
       rgba(0, 0, 0, 0) 89.32%
     ),
     #ffffff;
   border-radius: 9999px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.33); */
   cursor: pointer;
 }
 
 .icon2__inner {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   height: 100%;
   display: flex;
   align-items: center;
@@ -437,7 +444,7 @@ body {
 }
 
 .channel-list__header__text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -451,7 +458,6 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 16px;
-  border-top: 1px solid #00000033;
 }
 
 .channel-search__input__wrapper {
@@ -459,7 +465,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 40px;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--terciario);
   border-radius: 8px;
   margin-bottom: 8px;
   border: 1px solid transparent;
@@ -467,26 +473,27 @@ body {
 }
 
 .channel-search__input__wrapper:focus-within {
-  border: 1px solid #fff;
+  border: 1px solid rgba(243, 162, 13, 0.986);
 }
 
 .channel-search__input__icon {
   width: 32px;
   display: flex;
+  padding-left: 20px;
   justify-content: center;
 }
 
 .channel-search__input__text {
   background: none;
   border: none;
-  color: #fff;
-  font-family: Helvetica Neue, sans-serif;
+  /* color: #fff; */
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   outline: none;
 }
 
 ::placeholder {
-  color: rgba(255, 255, 255, 0.66);
+  color: rgba(0, 0, 0, 0.384);
   white-space: nowrap;
   width: 150px;
 }
@@ -509,7 +516,7 @@ body {
   width: fit-content;
   display: flex;
   align-items: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -558,7 +565,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 120%;
@@ -567,7 +574,7 @@ body {
 
 .channel-search__result-text {
   width: 100%;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 120%;
@@ -590,7 +597,7 @@ body {
 }
 
 .create-channel__header p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -611,7 +618,7 @@ body {
 }
 
 .channel-name-input__wrapper p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 120%;
   color: #2c2c30;
@@ -619,7 +626,7 @@ body {
 }
 
 .channel-name-input__wrapper input {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
   height: 50px;
@@ -632,7 +639,7 @@ body {
 }
 
 .channel-name-input__wrapper input:focus {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primario);
   outline: none;
 }
 
@@ -643,7 +650,7 @@ body {
 
 .create-channel__button-wrapper {
   height: 82px;
-  background: #f7f6f8;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -653,8 +660,8 @@ body {
 }
 
 .create-channel__button-wrapper p {
-  background: var(--primary-color);
-  font-family: Helvetica Neue, sans-serif;
+  background: var(--primario);
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
@@ -677,7 +684,7 @@ body {
 }
 
 .user-list__header p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #858688;
@@ -695,7 +702,7 @@ body {
 }
 
 .user-list__message {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   color: #2c2c30;
   margin: 20px;
@@ -713,7 +720,6 @@ body {
   cursor: pointer;
 }
 
-
 .user-item__name-wrapper {
   display: flex;
   align-items: center;
@@ -722,7 +728,7 @@ body {
 }
 
 .user-item__wrapper p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 17px;
   color: #2c2c30;
@@ -768,7 +774,7 @@ body {
 }
 
 .edit-channel__header p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -785,11 +791,10 @@ body {
   flex-direction: column;
   height: 169px;
   padding-left: 20px;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .channel-name-input__wrapper p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 120%;
   color: #2c2c30;
@@ -797,20 +802,19 @@ body {
 }
 
 .channel-name-input__wrapper input {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 18px;
   color: rgba(0, 0, 0);
   height: 50px;
   width: 90%;
-  background: #f7f6f8;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  border-radius: 8px;
   padding-left: 16px;
 }
 
 .channel-name-input__wrapper input:focus {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--primario);
   outline: none;
 }
 
@@ -821,7 +825,7 @@ body {
 
 .edit-channel__button-wrapper {
   height: 82px;
-  background: #f7f6f8;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -829,8 +833,8 @@ body {
 }
 
 .edit-channel__button-wrapper p {
-  background: var(--primary-color);
-  font-family: Helvetica Neue, sans-serif;
+  background: var(--primario);
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   padding: 10px 20px;
@@ -863,7 +867,7 @@ body {
 }
 
 .team-channel-header__name {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
   font-size: 18px;
   color: #2c2c30;
@@ -930,7 +934,7 @@ body {
 }
 
 .team-channel-header__right-text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   color: #858688;
 }
@@ -962,11 +966,12 @@ body {
 }
 
 .team-channel-list__header__title {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
+  font-weight: 900;
   line-height: 16px;
   height: 16px;
-  color: rgba(255, 255, 255, 0.66);
+  color: var(--primario);
   margin-bottom: 10px;
 }
 
@@ -980,30 +985,42 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--primario-beta);
   border-top-right-radius: 8px;
+  color: #ffffff;
   border-bottom-right-radius: 8px;
   font-weight: bold;
   margin-right: 16px;
   cursor: pointer;
   z-index: 2;
+  width: 100%;
+}
+
+.channel-preview__wrapper__selected .channel-preview__item {
+  color: #ffffff;
 }
 
 .channel-preview__wrapper:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--secudnario);
+  color: white;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   font-weight: bold;
   margin-right: 16px;
   cursor: pointer;
+  width: 100%;
+}
+
+.channel-preview__item:hover{
+  color: white;
 }
 
 .channel-preview__item {
   display: flex;
   align-items: center;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: var(--primario-alfa);
   padding: 0px 20px;
   height: 100%;
   width: 100%;
@@ -1053,7 +1070,7 @@ body {
 }
 
 .str-chat__message-team-content p {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 120%;
@@ -1082,7 +1099,7 @@ body {
 .str-chat__message-team-meta time {
   visibility: visible;
   z-index: 2;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -1091,7 +1108,7 @@ body {
 }
 
 .str-chat__message-team-author strong {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -1113,7 +1130,7 @@ body {
   z-index: 2;
   display: flex;
   /* justify-content: flex-end; */
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1130,7 +1147,7 @@ body {
 
 .str-chat__date-separator-date {
   color: #858688;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
@@ -1190,7 +1207,7 @@ ul.str-chat__simple-reactions-list:hover {
 }
 
 .str-chat__simple-reactions-list-item--last-number {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
@@ -1260,7 +1277,7 @@ ul.str-chat__simple-reactions-list:hover {
 .str-chat__edit-message-form .str-chat__message-team-form-footer button {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.33);
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
 }
 
@@ -1306,7 +1323,7 @@ ul.str-chat__simple-reactions-list:hover {
 }
 
 .str-chat__message-team-pin-indicator div div {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 10px !important;
   line-height: 120%;
   color: #858688;
@@ -1380,7 +1397,7 @@ ul.str-chat__simple-reactions-list:hover {
 }
 
 .team-message-input__wrapper .giphy-icon__text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
@@ -1414,7 +1431,7 @@ ul.str-chat__simple-reactions-list:hover {
   background: #fff;
   border: none;
   outline: none;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -1511,7 +1528,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .rta__list-header {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #2c2c30;
@@ -1548,7 +1565,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .str-chat__thread-header-details small {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1587,11 +1604,11 @@ div.rta__autocomplete.str-chat__emojisearch {
   padding: 0px;
 }
 
-.str-chat{
+.str-chat {
   height: auto !important;
 }
 
-.str-chat__main-panel{
+.str-chat__main-panel {
   height: 100vh !important;
 }
 
@@ -1628,7 +1645,7 @@ div.rta__autocomplete.str-chat__emojisearch {
 }
 
 .thread-message-input__wrapper .giphy-icon__text {
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 11px;
@@ -1671,7 +1688,7 @@ div.rta__autocomplete.str-chat__emojisearch {
   background: #fff;
   border: none;
   outline: none;
-  font-family: Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
   line-height: 10px;
 }
@@ -1752,6 +1769,9 @@ div.rta__autocomplete.str-chat__emojisearch {
     display: none;
   }
 
+  .channel-list__list__wrapper {
+    width: 100%;
+  }
   .team-channerl-header_menu-icon {
     display: flex;
   }
@@ -1786,16 +1806,12 @@ div.rta__autocomplete.str-chat__emojisearch {
     display: flex;
   }
 
-  .channel-list__list__wrapper {
-    width: 100%;
-  }
-
   .channerl-list__container-toggle {
     display: flex;
   }
 
   .channel-search__input__wrapper {
-    width: 90%;
+    width: 100%;
     padding-left: 10px;
     justify-content: flex-start;
   }
@@ -1835,3 +1851,17 @@ div.rta__autocomplete.str-chat__emojisearch {
     display: none;
   }
 }
+
+.str-chat__input-flat {
+  padding: 20px !important;
+}
+
+.str-chat__input-flat .str-chat__textarea>textarea:focus{
+  box-shadow: 0 0 0 3px var(--primario) !important;
+}
+
+.str-chat__avatar-fallback{
+  background-color: var(--primario) !important;
+}
+
+

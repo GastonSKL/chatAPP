@@ -53,7 +53,7 @@ const CreateChannel = ({ createType, setIsCreating }) => {
         <p>
           {createType === "team"
             ? "Create a new channel"
-            : "Send a Direct M essage"}
+            : "Send a Direct Message"}
         </p>
         <CloseCreateChannel setIsCreating={setIsCreating} />
       </div>
