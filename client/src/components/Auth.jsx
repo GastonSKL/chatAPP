@@ -31,7 +31,7 @@ const Auth = () => {
 
     const { username, password, phoneNumber, avatarURL } = form;
 
-    const URL = "https://chatapp-vl9x.onrender.com/auth";
+    const URL = "http://localhost:5000/auth";
 
     const {
       data: { token, userId, hashedPassword, fullName },
@@ -146,9 +146,9 @@ const Auth = () => {
           </div>
         </div>
       </div>
-      <div className="auth__form-container_image">
+      {/* <div className="auth__form-container_image">
         <img src={signInImage} alt="signin" />
-      </div>
+      </div> */}
     </div>
   );
 };
